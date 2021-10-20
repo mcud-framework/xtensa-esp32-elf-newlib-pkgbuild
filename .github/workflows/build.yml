@@ -14,7 +14,7 @@ jobs:
         run: |
           pacman -Syu --noconfirm --needed wget
           wget https://github.com/seeseemelk/xtensa-esp32-elf-binutils-pkgbuild/releases/download/v2.35-1/xtensa-esp32-elf-binutils-2.35-1-x86_64.pkg.tar.zst
-		  wget https://github.com/seeseemelk/xtensa-esp32-elf-gcc-bootstrap-pkgbuild/releases/download/v12.0.0-1/xtensa-esp32-elf-gcc-bootstrap-12.0.0-1-x86_64.pkg.tar.zst
+          wget https://github.com/seeseemelk/xtensa-esp32-elf-gcc-bootstrap-pkgbuild/releases/download/v12.0.0-1/xtensa-esp32-elf-gcc-bootstrap-12.0.0-1-x86_64.pkg.tar.zst
           pacman -U --noconfirm *.pkg.*
           rm *.pkg.*
           useradd -m build
